@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  verisec:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: verisec-firewall
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - NVD_API_KEY=${NVD_API_KEY}
+      - ABUSEIPDB_API_KEY=${ABUSEIPDB_API_KEY}
+      - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
+    volumes:
+      - verisec_data:/app/backend/data
+      - verisec_audit:/app/backend/data/audit
+    restart: unless-stopped
+    depends_on:
+      - ollama
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: verisec-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_storage:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  verisec_data:
+  verisec_audit:
+  ollama_storage:

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# SQLite & Data caches
+*.db
+*.sqlite3
+backend/data/*.json
+backend/data/sigma_rules/
+backend/data/audit/
+
+# Node
+node_modules/
+dist/
+build/
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

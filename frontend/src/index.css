@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased font-sans selection:bg-cyan-500 selection:text-slate-950;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glassmorphism & Glow effects */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
+.glow-rose {
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.25);
+}
+
+/* Code highlight span styling */
+.highlight-span-pass {
+  background-color: rgba(16, 185, 129, 0.2);
+  border-bottom: 2px solid #10b981;
+  color: #34d399;
+}
+.highlight-span-flag {
+  background-color: rgba(245, 158, 11, 0.2);
+  border-bottom: 2px solid #f59e0b;
+  color: #fbbf24;
+}
+.highlight-span-block {
+  background-color: rgba(244, 63, 94, 0.25);
+  border-bottom: 2px solid #f43f5e;
+  color: #fb7185;
+}

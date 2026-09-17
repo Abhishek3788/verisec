@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "claim_type": "cve",
+    "value": "CVE-2024-3400",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Palo Alto Networks PAN-OS command injection vulnerability"
+  },
+  {
+    "id": 2,
+    "claim_type": "cve",
+    "value": "CVE-2023-34362",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "MOVEit Transfer SQL Injection"
+  },
+  {
+    "id": 3,
+    "claim_type": "cve",
+    "value": "CVE-2021-44228",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Apache Log4Shell RCE"
+  },
+  {
+    "id": 4,
+    "claim_type": "cve",
+    "value": "CVE-2023-23397",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Microsoft Outlook Elevation of Privilege"
+  },
+  {
+    "id": 5,
+    "claim_type": "cve",
+    "value": "CVE-2020-0601",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Windows CryptoAPI Spoofing"
+  },
+  {
+    "id": 6,
+    "claim_type": "cve",
+    "value": "CVE-2017-0144",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "EternalBlue SMB RCE"
+  },
+  {
+    "id": 7,
+    "claim_type": "mitre_technique",
+    "value": "T1059",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Command and Scripting Interpreter"
+  },
+  {
+    "id": 8,
+    "claim_type": "mitre_technique",
+    "value": "T1059.001",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "PowerShell"
+  },
+  {
+    "id": 9,
+    "claim_type": "mitre_technique",
+    "value": "T1566",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Phishing"
+  },
+  {
+    "id": 10,
+    "claim_type": "mitre_technique",
+    "value": "T1190",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Exploit Public-Facing Application"
+  },
+  {
+    "id": 11,
+    "claim_type": "mitre_technique",
+    "value": "T1078",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Valid Accounts"
+  },
+  {
+    "id": 12,
+    "claim_type": "mitre_technique",
+    "value": "T1486",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Data Encrypted for Impact"
+  },
+  {
+    "id": 13,
+    "claim_type": "mitre_technique",
+    "value": "T1003",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "OS Credential Dumping"
+  },
+  {
+    "id": 14,
+    "claim_type": "sigma_rule",
+    "value": "PowerShell Download Cradle",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Real Sigma rule title"
+  },
+  {
+    "id": 15,
+    "claim_type": "sigma_rule",
+    "value": "Mimikatz Command Line Arguments",
+    "is_real": true,
+    "expected_verdict": "PASS",
+    "description": "Real Sigma rule title"
+  },
+  {
+    "id": 16,
+    "claim_type": "cve",
+    "value": "CVE-2099-99999",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated CVE ID with future year"
+  },
+  {
+    "id": 17,
+    "claim_type": "cve",
+    "value": "CVE-2024-998877",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Non-existent fabricated CVE ID"
+  },
+  {
+    "id": 18,
+    "claim_type": "cve",
+    "value": "CVE-2025-00001",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fake unassigned CVE"
+  },
+  {
+    "id": 19,
+    "claim_type": "cve",
+    "value": "CVE-2090-12345",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated CVE"
+  },
+  {
+    "id": 20,
+    "claim_type": "cve",
+    "value": "CVE-2022-9999999",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated CVE"
+  },
+  {
+    "id": 21,
+    "claim_type": "mitre_technique",
+    "value": "T9999",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated MITRE technique ID"
+  },
+  {
+    "id": 22,
+    "claim_type": "mitre_technique",
+    "value": "T9999.001",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated MITRE sub-technique ID"
+  },
+  {
+    "id": 23,
+    "claim_type": "mitre_technique",
+    "value": "T8888",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fake MITRE technique"
+  },
+  {
+    "id": 24,
+    "claim_type": "mitre_technique",
+    "value": "T7000.123",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fake MITRE technique"
+  },
+  {
+    "id": 25,
+    "claim_type": "mitre_technique",
+    "value": "T9123",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fake MITRE technique"
+  },
+  {
+    "id": 26,
+    "claim_type": "sigma_rule",
+    "value": "Quantum Crypto Bypass Detection Rule",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated non-existent Sigma rule"
+  },
+  {
+    "id": 27,
+    "claim_type": "sigma_rule",
+    "value": "Super Secret Kernel Exploit Rule 999",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated Sigma rule"
+  },
+  {
+    "id": 28,
+    "claim_type": "sigma_rule",
+    "value": "ZeroDay Exploit Injected Shellcode Rule",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated Sigma rule"
+  },
+  {
+    "id": 29,
+    "claim_type": "cve",
+    "value": "CVE-2088-11111",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated CVE"
+  },
+  {
+    "id": 30,
+    "claim_type": "mitre_technique",
+    "value": "T9543",
+    "is_real": false,
+    "expected_verdict": "BLOCK",
+    "description": "Fabricated MITRE technique"
+  }
+]
