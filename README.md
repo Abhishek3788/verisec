@@ -4,6 +4,26 @@
 
 ---
 
+## 📸 Interface & Dashboard Showcase
+
+### 1. Firewall Engine & Claim Interceptor
+> Intercepts raw LLM outputs in real time, extracting and validating security claims against NIST NVD, MITRE ATT&CK, & SigmaHQ registries.
+![Firewall Engine](docs/images/firewall_engine.png)
+
+### 2. Audit Evidence & Report Modal
+> SHA-256 signed JSON audit evidence packets with authoritative source citations and deterministic validation messages.
+![Audit Report Inspection](docs/images/audit_report.png)
+
+### 3. Executive Telemetry & Prevention Analytics
+> Real-time security intelligence telemetry, verdict distribution pie charts, and category claim classification metrics.
+![Executive Analytics](docs/images/analytics_dashboard.png)
+
+### 4. System Health & Integration Status
+> Status monitoring for Groq LLM, Ollama offline fallback, NVD API local cache, MITRE STIX index, and SigmaHQ rules.
+![System Health](docs/images/system_health.png)
+
+---
+
 ## 🌟 Key Capabilities & 4-Layer Defense Pipeline
 
 ```
@@ -44,16 +64,11 @@ Evaluated on `test_dataset.json` containing 30 labeled security claims (real CVE
 
 ## 🚀 Quickstart Guide
 
-### Prerequisites
-- Python 3.11+
-- Node.js v18+
-- Git
-
-### 1. Local Development Setup
+### Local Development Setup
 
 ```bash
 # Clone the repository
-git clone https://github.com/verisec/verisec-firewall.git
+git clone https://github.com/Abhishek3788/verisec.git
 cd verisec
 
 # Set up Python Virtual Environment
@@ -99,7 +114,7 @@ VeriSec can be containerized and executed in air-gapped security environments:
 docker-compose up --build -d
 ```
 
-Access the unified portal at `http://localhost:8000`.
+Access the portal at `http://localhost:8000`.
 
 ---
 
